@@ -9,7 +9,7 @@ $(document).ready(function() {
         async: true,
         success: function(data) {
             $('.img-laptop-container').html(data);
-            $('.img-laptop').on('load', function() {
+            $('#img-cover').on('load', function() {
                 $('.img-laptop-container').animate({
                     left: '10%',
                     opacity: '1'
