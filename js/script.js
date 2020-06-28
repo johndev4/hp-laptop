@@ -10,12 +10,13 @@ $(document).ready(function() {
     $.ajax({
         url: 'js/hp-bf064tx.txt',
         type: 'get',
+        async: true,
         success: function(data) {
             $('.img-laptop-container').html(data);
             $('.img-laptop').on('load', function() {
-                $('.img-container').animate({
+                $('.img-laptop-container').animate({
                     left: '10%',
-                    opacity: '1.0'
+                    opacity: '1'
                 }, 1800);
             });
         }
