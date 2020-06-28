@@ -1,0 +1,30 @@
+.custom-body {
+    background-color: #000000;
+}
+
+
+.hp-model-name {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.slider-container {
+    text-align: center;
+}
+
+
+img {
+    position: absolute;
+    width: 100%;
+}
+
+.img-container {
+    position: relative;
+    left: 0;
+    top: 30px;
+    width: 80%;
+    opacity: 0;
+    filter: brightness(80%);
+}
