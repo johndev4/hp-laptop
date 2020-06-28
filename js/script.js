@@ -10,12 +10,12 @@ $(document).ready(function() {
         success: function(data) {
             $('.img-laptop-container').html(data);
             $('#img-cover').on('load', function() {
+                $('.gif-loading-container').css('display', 'none');
+                $('.img-laptop-container').css('display', 'block');
                 $('.img-laptop-container').animate({
                     left: '10%',
                     opacity: '1'
                 }, 1800);
-                $('.gif-loading-container').css('display', 'none');
-                $('.img-laptop-container').css('display', 'block')
             });
         }
     });
