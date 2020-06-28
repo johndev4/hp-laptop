@@ -38,4 +38,5 @@
     width: 80%;
     opacity: 0;
     filter: brightness(80%);
+    display: none;
 }

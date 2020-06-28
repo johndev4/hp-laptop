@@ -15,6 +15,7 @@ $(document).ready(function() {
                     opacity: '1'
                 }, 1800);
                 $('.gif-loading-container').css('display', 'none');
+                $('.img-laptop-container').css('display', 'block')
             });
         }
     });
