@@ -6,8 +6,8 @@ $(document).ready(function() {
     $.ajax({
         url: 'js/hp-bf064tx.txt',
         type: 'get',
-        async: false,
-        cache: false,
+        async: true,
+        cache: true,
         success: function(data) {
             $('.img-laptop-container').html(data);
             $('#img-cover').on('load', function() {
