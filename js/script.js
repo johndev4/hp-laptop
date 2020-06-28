@@ -23,6 +23,6 @@ $(document).ready(function() {
     });
 
     $(document).ajaxComplete(function() {
-        $('.gif-loading-container').hide();
+        //$('.gif-loading-container').hide();
     });
 });
