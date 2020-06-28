@@ -22,7 +22,7 @@ $(document).ready(function() {
         }
     });
 
-    $(document).ajaxComplete(function() {
-        //$('.gif-loading-container').hide();
+    $(document).ajaxStop(function() {
+        $('.gif-loading-container').hide();
     });
 });
