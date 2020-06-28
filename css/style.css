@@ -15,6 +15,16 @@
 }
 
 
+.loading-container {
+    color: #ffffff;
+    text-align: center;
+}
+
+#loading {
+    width: 20%;
+}
+
+
 img {
     position: absolute;
     width: 100%;
