@@ -4,7 +4,7 @@ $(document).ready(function() {
     });
 
     $(document).ajaxSend(function() {
-        
+        $('.gif-loading-container').show();
     });
 
     $.ajax({
@@ -22,7 +22,7 @@ $(document).ready(function() {
         }
     });
 
-    $(document).ajaxStop(function() {
+    $(document).ajaxComplete(function() {
         $('.gif-loading-container').hide();
     });
 });
