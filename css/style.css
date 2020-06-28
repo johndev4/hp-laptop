@@ -15,22 +15,22 @@
 }
 
 
-.loading-container {
-    color: #ffffff;
+.gif-loading-container {
     text-align: center;
+    width: 100%;
 }
 
-#loading {
-    width: 20%;
+#gif-loading {
+    width: 100px;
 }
 
 
-img {
+.img-laptop {
     position: absolute;
     width: 100%;
 }
 
-.img-container {
+.img-laptop-container {
     position: relative;
     left: 0;
     top: 30px;

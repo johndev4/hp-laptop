@@ -20,16 +20,16 @@ $(document).ready(function() {
             type: 'get',
             async: true,
             cache: false,
-            success: function(result) {
-                $('.img-container').html(result);
-                $('#img-cover').on('load', function() {
+            success: function(data) {
+                $('.img-laptop-container').html(data);
+                $('.img-laptop').on('load', function() {
                     $('.img-container').animate({
                         left: '10%',
                         opacity: '1.0'
                     }, 1800);
                 });
-                $('.loading-container').hide();
+                $('.gif-loading-container').hide();
             }
         });
-    }, 10)
+    }, 0)
 });
