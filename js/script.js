@@ -3,10 +3,6 @@ $(document).ready(function() {
         $('#img-cover').css('opacity', ($('input').val()/100) * 1.0);
     });
 
-    $(document).ajaxSend(function() {
-        $('.gif-loading-container').show();
-    });
-
     $.ajax({
         url: 'js/hp-bf064tx.txt',
         type: 'get',
@@ -18,11 +14,8 @@ $(document).ready(function() {
                     left: '10%',
                     opacity: '1'
                 }, 1800);
+                $('.gif-loading-container').hide();
             });
         }
-    });
-
-    $(document).ajaxComplete(function() {
-        $('.gif-loading-container').hide();
     });
 });
