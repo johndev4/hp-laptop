@@ -14,7 +14,7 @@ $(document).ready(function() {
                     left: '10%',
                     opacity: '1'
                 }, 1800);
-                $('.gif-loading-container').hide();
+                $('.gif-loading-container').css('display', 'none');
             });
         }
     });
