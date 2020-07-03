@@ -4,7 +4,8 @@
 
 
 .hp-model-name {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'AmericanCaptain';
+    letter-spacing: 7px;
     text-align: center;
     color: #ffffff;
 }
@@ -18,11 +19,11 @@
 .gif-loading-container {
     text-align: center;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 15%;
 }
 
 #gif-loading {
-    width: 100px;
+    width: 90px;
 }
 
 
@@ -39,4 +40,11 @@
     opacity: 0;
     filter: brightness(80%);
     display: none;
+}
+
+
+
+@font-face {
+    font-family: 'AmericanCaptain';
+    src: url('fonts/AmericanCaptain.otf');
 }
