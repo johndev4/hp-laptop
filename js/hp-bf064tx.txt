@@ -1,2 +1,0 @@
-<img src="img/hp-bf064tx/components.png" alt="components" id="img-components" class="img-laptop">
-<img src="img/hp-bf064tx/cover.png" alt="cover" id="img-cover" class="img-laptop">
