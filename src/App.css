@@ -26,10 +26,23 @@
 
 .img-laptop-container {
   position: relative;
-  left: 0;
+  left: 10%;
   top: 30px;
+  opacity: 1;
   width: 80%;
-  opacity: 0;
   filter: brightness(80%);
-  display: none;
+  animation-name: laptopContAnim;
+  animation-duration: 3s;
+  /* display: none; */
+}
+
+@keyframes laptopContAnim {
+  from {
+    left: 0;
+    opacity: 0;
+  }
+  to {
+    left: 10%;
+    opacity: 1;
+  }
 }
