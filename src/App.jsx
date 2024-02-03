@@ -29,7 +29,7 @@ function App() {
                 defaultValue={100}
                 style={{ width: "30%" }}
                 onInput={(ev) =>
-                  (imgCover.current.style.opacity = `${ev.nativeEvent.target.value}%`)
+                  (laptopCoverRef.current.style.opacity = `${ev.nativeEvent.target.value}%`)
                 }
               />
             </div>
