@@ -5,7 +5,15 @@ import hpCover from "./assets/hp-bf064tx/cover.png";
 import "./App.css";
 
 function App() {
-  var imgCover = createRef();
+  var laptopCoverRef = createRef();
+  var laptopComponentsRef = createRef();
+  var loadingContainerRef = createRef();
+
+  const laptopImgLoaded = (ev) => {
+    if (laptopComponentsRef?.current && laptopCoverRef?.current) {
+      loadingContainerRef.current.style.display = "none";
+    }
+  };
 
   return (
     <>
@@ -25,6 +33,9 @@ function App() {
                 }
               />
             </div>
+            <div className="gif-loading-container" ref={loadingContainerRef}>
+              <img src={loadingGif} alt="loading" id="gif-loading" />
+            </div>
             {hpComponents && hpCover ? (
               <div className="img-laptop-container">
                 <img
@@ -32,19 +43,20 @@ function App() {
                   alt="components"
                   id="img-components"
                   className="img-laptop"
+                  ref={laptopComponentsRef}
+                  onLoad={laptopImgLoaded}
                 />
                 <img
                   src={hpCover}
                   alt="cover"
                   id="img-cover"
                   className="img-laptop"
-                  ref={imgCover}
+                  ref={laptopCoverRef}
+                  onLoad={laptopImgLoaded}
                 />
               </div>
             ) : (
-              <div className="gif-loading-container">
-                <img src={loadingGif} alt="loading" id="gif-loading" />
-              </div>
+              ""
             )}
           </div>
         </div>
