@@ -26,7 +26,7 @@ function App() {
                 }
               />
             </div>
-            {hpComponents && hpComponents ? (
+            {hpComponents && hpCover ? (
               <div className="img-laptop-container">
                 <img
                   src={hpComponents}
