@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import viteLogo from "/vite.svg";
+import { createRef } from "react";
 import loadingGif from "./assets/loading.gif";
 import hpComponents from "./assets/hp-bf064tx/components.png";
 import hpCover from "./assets/hp-bf064tx/cover.png";
 import "./App.css";
 
 function App() {
-  var imgCover = React.createRef();
+  var imgCover = createRef();
 
   return (
     <>
